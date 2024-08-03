@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Matrices: Resta y Más</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Operaciones con Matrices: Enfoque en la Resta</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Definición">Definición</a></li>
+                    <li><a href="#teoria">Teoría</a></li>
+                    <li><a href="#calculadora">Calculadora</a></li>
+                    <li><a href="#aplicaciones">Aplicaciones</a></li>
+                    <li><a href="#apoyo">apoyo</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="Definición" class="info-section">
+                <h2>Definición</h2>
+                <p>La resta de matrices es una operación lineal que implica restar los elementos de dos o más matrices que se encuentran en la misma posición dentro de sus respectivas matrices,<br>
+                    siempre que estas matrices tengan el mismo tamaño.
+                </p>
+                
+                <h3>
+                    formula
+                </h3>
+                <div class="center">
+                    <img src="9-2-2-resta-de-matrices.png" width="400" height="300" alt="Resta de matrices">
+                </div>
+
+                <h3>Ejercicio</h3>
+                <img src="matrix-subtraction.gif">
+
+
+            </section>
+            <section id="teoria" class="info-section">
+                <h2>Teoría de la Resta de Matrices</h2>
+                <p>La resta de matrices es una operación fundamental que se realiza entre dos matrices del mismo tamaño. Para restar dos matrices, se siguen estos pasos:</p>
+                <ol>
+                    <li>Verificar que ambas matrices tengan las mismas dimensiones.</li>
+                    <li>Restar los elementos correspondientes de cada matriz.</li>
+                    <li>El resultado es una nueva matriz con las mismas dimensiones que las matrices originales.</li>
+                </ol>
+                <p>Matemáticamente, si A = [a<sub>ij</sub>] y B = [b<sub>ij</sub>], entonces C = A - B se define como:</p>
+            
+            </section>
+            
+            <section id="calculadora" class="matrix-container">
+                <h2>Calculadora de Resta de Matrices</h2>
+                
+                <h3>Matrices 2x2</h3>
+                <div class="matrix-grid">
+                    <div class="matrix-wrapper">
+                        <h4>Matriz A</h4>
+                        <div class="matrix" id="matrix2x2_1"></div>
+                    </div>
+                    <div class="matrix-wrapper">
+                        <h4>Matriz B</h4>
+                        <div class="matrix" id="matrix2x2_2"></div>
+                    </div>
+                </div>
+                <button onclick="subtract(2)">Restar Matrices 2x2</button>
+                <div id="result2x2" class="result"></div>
+
+                <h3>Matrices 3x3</h3>
+                <div class="matrix-grid">
+                    <div class="matrix-wrapper">
+                        <h4>Matriz A</h4>
+                        <div class="matrix" id="matrix3x3_1"></div>
+                    </div>
+                    <div class="matrix-wrapper">
+                        <h4>Matriz B</h4>
+                        <div class="matrix" id="matrix3x3_2"></div>
+                    </div>
+                </div>
+                <button onclick="subtract(3)">Restar Matrices 3x3</button>
+                <div id="result3x3" class="result"></div>
+            </section>
+
+            <section id="aplicaciones" class="info-section">
+                <h2>Aplicaciones de la Resta de Matrices</h2>
+                <p>La resta de matrices tiene numerosas aplicaciones en diversos campos:</p>
+                <ul>
+                    <li><strong>Física:</strong> Cálculo de diferencias en campos vectoriales.</li>
+                    <li><strong>Economía:</strong> Análisis de cambios en tablas de insumo-producto.</li>
+                    <li><strong>Ingeniería:</strong> Procesamiento de imágenes y señales.</li>
+                    <li><strong>Estadística:</strong> Cálculo de varianzas y covarianzas en conjuntos de datos multidimensionales.</li>
+                    <li><strong>Gráficos por Computadora:</strong> Transformaciones y animaciones de objetos 3D.</li>
+                </ul>
+            </section>
+
+            <section id="apoyo" class="video-link">
+                <h2>videos de apoyo</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qznWZ_qOyw8?si=ixsjb8HXHa81shEk" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                    
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2024 Calculadora de Matrices. Creado con fines educativos.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
